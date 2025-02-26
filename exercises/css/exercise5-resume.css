@@ -19,3 +19,12 @@ img{
     margin: .5rem;
     max-width: 100%;
 }
+
+h2{
+    margin: 1.5rem;
+}
+
+hr{
+    border: 1.5px solid #FFE390;
+    border-radius: 1.5rem;
+}

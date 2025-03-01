@@ -1,31 +1,55 @@
-<!DOCTYPE html>
-<html lang="en">
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #E1F4FF;
+}
 
-    <head>
-        <meta charset="UTF-8">
-        <title>Stacy Shang About Me - Exercise #6</title>
-        
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Modak&display=swap" rel="stylesheet">
-        
-        <link href="css/exercise6.css" rel="stylesheet">
-    </head>
+h1{
+    color: #FFE390;
+    background-color: #3D3D3D;
+    padding: 1.5rem;
+    text-transform: lowercase;
+    font-family: "Modak", serif;
+    font-weight: 400;
+    font-style: normal;
+}
 
-    <body>
+h2{
+    margin: 1.5rem;
+}
 
-        <h1>About Stacy Shang</h1>
+p{
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    line-height: 1.5rem;
+    font-family: 'Courier New', Courier, monospace;
+}
 
-        <h2>Concise bio</h2>
-        <p>I am currently a sophomore at the University of Massachusetts Amherst majoring in linguistics with a minor in Spanish. I am also working towards gaining a certificate from the Professional Writing and Technical Communication program. I am interested in language as a means to share important messages and bridge connections between people.</p>
-        
-        <h2>Longer bio</h2>
-        <p>As a linguistics major with a concentration in Linguistics and Data Science, I am honing my quantitative reasoning and programming skills in order to apply them to research and language technology. With my Professional Writing and Technical Communication certificate, I will be able to write software documentation for projects and effectively convey information about these specialized topics. Another one of my interests is language acquisition and teaching English as a second language. As a research assistant for the Language Acquisition Lab at UMass Amherst, I am able to delve into inquiries about how children acquire language. With my minor in Spanish, I hope to participate in teaching English to children whose first language is Spanish. Human language is incredibly complex and an indispensable facet of life. My hope is to apply my knowledge to working with speakers of other languages and facilitate the formation of meaningful connections in this world.</p>
-        
-        <p><a href="https://www.linkedin.com/in/stacy-shang-135012297/">LinkedIn</a></p>
-        <p><a href="mailto:stacyshang@umass.edu">Email</a></p>
+img{
+    float: left;
+    border: 3px #3D3D3D solid;
+    margin: .5rem;
+    max-width: 100%;
+}
 
-        <img src="../images/stacybio.jpg" alt="Stacy resting on a rock while hiking.">
+hr{
+    border: 1.5px solid #FFE390;
+    border-radius: 1.5rem;
+}
 
-    </body>
-</html>
+a:link {
+    color: #4841FE;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #AA2FD6
+}
+
+a:hover {
+    color: #C23400;
+    text-decoration: underline
+}
+
+a:active {
+    color: #D4007F
+}

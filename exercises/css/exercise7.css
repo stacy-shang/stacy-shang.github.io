@@ -1,0 +1,92 @@
+body {
+    background-color: #DB8767;
+    margin: 0;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header{
+    background-color: #000000;
+    color: #ffffff;
+    padding: 2rem;
+    text-align: right;
+}
+
+main{
+    border: 0px red solid;
+}
+
+article{
+    background-color: white;
+    border: 1px solid #561b3a;
+    padding: 1.3rem;
+    margin: 0.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 1rem;
+}
+
+footer{
+    background-color: #000000;
+    color:#ffffff;
+    padding: 1rem;
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Link styling */
+a:link{
+    color: #1d5093;
+}
+
+a:visited{
+    color: #6f1553;
+}
+a:hover{
+    color: #9b3920;
+}a:active{
+    color: #236a16;
+}
+
+/* Link styling - header */
+
+header a:link{
+    color:#ffffff;
+    text-decoration: none;
+}
+
+header a:visited{
+    color:#ffffff;
+    text-decoration: none;
+}
+
+header a:hover{
+    color:#80c1ce;
+    text-decoration: underline wavy;
+}
+
+header a:active{
+    color:#ca70c0;
+    text-decoration: underline wavy;
+}
+
+h2.logo{
+    background-color: #114768;
+    text-align: center;
+    width: 6rem;
+    height: 6rem;
+    display: grid;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.wrapper{
+    border: 0px black solid; /*Shows the edges of our div*/
+    margin: 0 auto; /*Centers element horizontally*/
+    max-width: 40rem; /*In order for the container to appear centered, it needs a width*/
+}

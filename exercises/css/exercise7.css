@@ -1,5 +1,5 @@
 body {
-    background-color: #DB8767;
+    background-image: linear-gradient(#DB8767, #ffffff);
     margin: 0;
     font-family: "Quicksand", sans-serif;
     font-weight: 400;
@@ -24,6 +24,7 @@ article{
     margin: 0.5rem;
     margin-bottom: 1.5rem;
     border-radius: 1rem;
+    filter: drop-shadow(0.3rem 0.3rem 0.2rem #2b2323dc);
 }
 
 footer{

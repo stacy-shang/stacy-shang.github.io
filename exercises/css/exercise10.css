@@ -1,0 +1,57 @@
+.wrapper {
+    display: grid;
+    grid-template-rows: 150px min-content min-content 1fr;
+    grid-template-columns: 2fr 5fr 2fr;
+    min-height: 100vh;
+}
+
+h1 {
+    color: purple;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.5em;
+}
+h2 {
+    text-align: center;
+    background-color: aliceblue;
+    padding: 12px;
+    margin: 0px;
+}
+
+nav li {
+    list-style-type: none;
+    background-color: black;
+    margin: 1px;
+}
+
+nav a {
+    text-decoration: none;
+    color: lightgray;
+    padding: 25px;
+}
+
+nav a:hover {
+    color: palegoldenrod;
+    background-color: black;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    padding: 25px;
+    margin: 0px;
+    flex-wrap: wrap;
+}
+
+footer {
+    color: lightgray;
+    background-color: black;
+    padding: 15px;
+    text-align: center;
+}
+
+main {
+	min-height: 100vh;
+}

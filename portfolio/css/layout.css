@@ -51,3 +51,21 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+.links ul {
+    list-style-type: none;
+}
+
+.links li {
+    display: inline;
+    padding: 15px;
+}
+
+.links a {
+    color: #EDEDED
+}
+
+.links a:hover {
+    color: palegoldenrod;
+    font-weight: bold;
+}

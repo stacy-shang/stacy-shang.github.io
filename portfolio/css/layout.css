@@ -3,6 +3,10 @@ body {
     font-weight: 400;
     font-style: normal;
     margin: 0px;
+    position: relative;
+    min-height: 100vh;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 h1 {
@@ -13,6 +17,7 @@ h1 {
     margin: 0px;
 }
 
+/* navigation bar */
 nav li {
     list-style-type: none;
     background-color: black;
@@ -41,9 +46,14 @@ nav ul {
     flex-wrap: wrap;
 }
 
+.wrapper {
+    padding-bottom: 5rem;
+}
+
 main {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 2.7rem;
+    padding-right: 2.7rem;
+    line-height: 1.2;
 }
 
 footer {
@@ -51,8 +61,10 @@ footer {
     background-color: black;
     padding: 15px;
     text-align: center;
-    /* position: absolute; */
+    position: absolute;
     bottom: 0;
+    width: 100%;
+    height: 3rem;
 }
 
 .links ul {
@@ -71,4 +83,38 @@ footer {
 .links a:hover {
     color: palegoldenrod;
     font-weight: bold;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* HOME */
+
+main.home {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 2fr;
+}
+
+.left {
+    padding-top: 2.5rem;
+    grid-row: 1/2;
+    grid-column: 1/2;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+img.home {
+    width: 24rem;
+    height: 24rem;
+    border-radius: 50%;
+}
+
+.text {
+    padding-top: 8rem;
+    padding-right: 15rem;
+    grid-row: 1/2;
+    grid-column: 2/3;
 }

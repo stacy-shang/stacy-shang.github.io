@@ -17,7 +17,7 @@ h1 {
     margin: 0px;
 }
 
-/* navigation bar */
+/* NAV BAR */
 nav li {
     list-style-type: none;
     background-color: black;
@@ -54,6 +54,7 @@ main {
     padding-left: 2.7rem;
     padding-right: 2.7rem;
     line-height: 1.2;
+    margin-bottom: 0%;
 }
 
 footer {
@@ -64,7 +65,7 @@ footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 3rem;
+    margin-top: 0%;
 }
 
 .links ul {
@@ -90,11 +91,39 @@ img {
 }
 
 /* HOME */
+body.home {
+    background-image: url(../../images/lavender-7489530_1280.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
 main.home {
+    margin: 0;
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+h2.home {
+    font-size: 300%;
+    margin: 0%;
+}
+
+p.home {
+    font-size: larger;
+    margin: 0%;
+}
+
+/* ABOUT */
+main.about {
+    background-image: linear-gradient(#9BB4E8);
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 2fr;
+    min-height: 26rem;
+    padding: 2rem;
 }
 
 .left {
@@ -106,7 +135,7 @@ main.home {
     justify-content: center;
 }
 
-img.home {
+img.about {
     width: 24rem;
     height: 24rem;
     border-radius: 50%;
@@ -117,4 +146,44 @@ img.home {
     padding-right: 15rem;
     grid-row: 1/2;
     grid-column: 2/3;
+}
+
+/* PORTFOLIO */
+main.portfolio {
+    background-color: #9BB4E8;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    min-height: 26rem;
+    column-gap: 2rem;
+    padding: 2rem;
+}
+
+.box {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    border-radius: 15%;
+    text-decoration: none;
+    color: black;
+    filter: drop-shadow(0.3rem 0.3rem 0.2rem #2b2323dc);
+}
+
+a.box {
+    text-decoration: none;
+    background-color: #C9A0DC;
+}
+
+a.box:hover {
+    filter: drop-shadow(0.3rem 0.3rem 0.2rem #cbb878dc);
+}
+
+h2.portfolio {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+p.portfolio {
+    padding-left: 2rem;
+    padding-right: 2rem;
 }

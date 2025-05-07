@@ -7,6 +7,7 @@ body {
     min-height: 100vh;
     max-width: 100%;
     overflow-x: hidden;
+    background-color: #9BB4E8;
 }
 
 h1 {
@@ -20,7 +21,7 @@ h1 {
 /* NAV BAR */
 nav li {
     list-style-type: none;
-    background-color: black;
+    background-color: #000000;
     margin: 1px;
 }
 
@@ -31,8 +32,8 @@ nav a {
 }
 
 nav a:hover {
-    color: palegoldenrod;
-    background-color: black;
+    color: #EEE8AA;
+    background-color: #000000;
     text-decoration: underline;
     font-weight: bold;
 }
@@ -40,7 +41,7 @@ nav a:hover {
 nav ul {
     display: flex;
     justify-content: center;
-    background-color: black;
+    background-color: #000000;
     padding: 25px;
     margin: 0px;
     flex-wrap: wrap;
@@ -58,7 +59,7 @@ main {
 }
 
 footer {
-    color: lightgray;
+    color: #EDEDED;
     background-color: black;
     padding: 15px;
     text-align: center;
@@ -82,7 +83,7 @@ footer {
 }
 
 .links a:hover {
-    color: palegoldenrod;
+    color: #EEE8AA;
     font-weight: bold;
 }
 
@@ -118,12 +119,10 @@ p.home {
 
 /* ABOUT */
 main.about {
-    background-image: linear-gradient(#9BB4E8);
+    background-color: #9BB4E8;
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 2fr;
-    min-height: 26rem;
-    padding: 2rem;
 }
 
 .left {
@@ -139,43 +138,45 @@ img.about {
     width: 24rem;
     height: 24rem;
     border-radius: 50%;
+    max-width: 100%;
 }
 
 .text {
     padding-top: 8rem;
     padding-right: 15rem;
+    padding-left: 4rem;
     grid-row: 1/2;
     grid-column: 2/3;
 }
 
 /* PORTFOLIO */
+
 main.portfolio {
     background-color: #9BB4E8;
     display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
-    min-height: 26rem;
-    column-gap: 2rem;
-    padding: 2rem;
-}
-
-.box {
-    display: grid;
-    align-content: center;
+    gap: 2rem;
+    padding: 3rem;
+    grid-template-columns: repeat(auto-fit, 25rem);
+    align-items: center;
     justify-content: center;
-    border-radius: 15%;
-    text-decoration: none;
-    color: black;
-    filter: drop-shadow(0.3rem 0.3rem 0.2rem #2b2323dc);
 }
 
 a.box {
+    display: grid;
+    /* align-content: center; */
+    justify-content: center;
+    height: 20rem;
+    padding: 2rem;
+    border: 1px solid #000000;
+    border-radius: 15%;
+    background-color: #FFFFFF;
     text-decoration: none;
-    background-color: #C9A0DC;
+    color: #000000;
+    filter: drop-shadow(0.3rem 0.3rem 0.2rem #2B2323DC);
 }
 
 a.box:hover {
-    filter: drop-shadow(0.3rem 0.3rem 0.2rem #cbb878dc);
+    filter: drop-shadow(0.3rem 0.3rem 0.2rem #EEE8AA);
 }
 
 h2.portfolio {
@@ -186,4 +187,13 @@ h2.portfolio {
 p.portfolio {
     padding-left: 2rem;
     padding-right: 2rem;
+}
+
+/* RESUME */
+.resume {
+    background-color: #FFFFFF;
+    border: 1px solid #000000;
+    margin: 3rem;
+    border-radius: 5%;
+    padding: 1.5rem;
 }

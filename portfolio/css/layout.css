@@ -135,7 +135,7 @@ img.about {
 }
 
 .section {
-    max-width: 45rem;
+    max-width: 50vmax;
 }
 
 /* PORTFOLIO */

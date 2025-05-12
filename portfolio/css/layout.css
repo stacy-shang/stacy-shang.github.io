@@ -94,7 +94,7 @@ img {
 
 /* HOME */
 body.home {
-    background-image: url(../../images/hudson2.jpg);
+    background-image: url(../../images/hudson.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }

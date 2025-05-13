@@ -10,6 +10,10 @@ body {
     background-color: #fbe3c1;
 }
 
+h1 {
+    justify-self: center;
+}
+
 h2.header {
     text-align: center;
     color: #5c3d4a;
@@ -48,15 +52,11 @@ nav ul {
     flex-wrap: wrap;
 }
 
-.wrapper {
-    padding-bottom: 5rem;
-}
-
 main {
     padding-left: 2.7rem;
     padding-right: 2.7rem;
     line-height: 1.2;
-    margin-bottom: 0%;
+    padding-bottom: 5rem;
 }
 
 footer {
@@ -99,13 +99,23 @@ body.home {
     background-repeat: no-repeat;
 }
 
-main.home {
+.home_text {
     margin: 0;
     position: absolute;
     top: 50%;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+}
+
+.bottom {
+    position: absolute;
+    bottom: 0;
+    font-size: 75%;
+}
+
+.footer_link {
+    color: #FFFFFF;
 }
 
 h1.home {
@@ -118,10 +128,15 @@ p.home {
     margin: 0%;
 }
 
+p.bottom {
+    align-items: end;
+}
+
 /* ABOUT */
 main.about {
     display: flex;
     align-items: center;
+    justify-items: center;
     flex-wrap: wrap;
 }
 
@@ -130,8 +145,12 @@ img.about {
     height: 24rem;
     border-radius: 50%;
     max-width: 100%;
-    float: left;
-    padding: 3rem;
+}
+
+figcaption {
+    padding-top: 1rem;
+    font-size: 75%;
+    text-align: center;
 }
 
 .section {
@@ -139,10 +158,11 @@ img.about {
 }
 
 /* PORTFOLIO */
-main.portfolio {
+.portfolio_wrapper {
     display: grid;
     gap: 2rem;
     padding: 3rem;
+    padding-top: 0%;
     grid-template-columns: repeat(auto-fit, 25rem);
     align-items: center;
     justify-content: center;
@@ -150,7 +170,6 @@ main.portfolio {
 
 a.box {
     display: grid;
-    /* align-content: center; */
     justify-content: center;
     height: 20rem;
     padding: 2rem;
@@ -163,7 +182,7 @@ a.box {
 }
 
 a.box:hover {
-    filter: drop-shadow(0.3rem 0.3rem 0.2rem #EEE8AA);
+    filter: drop-shadow(0.3rem 0.3rem 0.2rem #d69e90);
 }
 
 h2.portfolio {
@@ -181,6 +200,23 @@ p.portfolio {
     background-color: #FFFFFF;
     border: 1px solid #000000;
     margin: 3rem;
+    margin-top: 0%;
     border-radius: 5%;
     padding: 1.5rem;
+}
+
+/* PORTFOLIO ITEMS */
+article {
+    background-color: #FFFFFF;
+    border: 1px solid #000000;
+    padding: 1.3rem;
+    margin: 0.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 1rem;
+    filter: drop-shadow(0.3rem 0.3rem 0.2rem #2b2323dc);
+}
+
+.portfolio_section_wrapper {
+    margin: 0 auto; /*Centers element horizontally*/
+    max-width: 65rem; /*In order for the container to appear centered, it needs a width*/
 }
